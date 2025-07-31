@@ -217,55 +217,52 @@ const Index = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${heroBg})` }}
-        >
-          <div className="absolute inset-0 bg-[var(--gradient-hero)]"></div>
-        </div>
+  <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <div
+      className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: `url(${heroBg})` }}
+    >
+      <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70"></div>
+    </div>
 
-        <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-          <div className="fade-in-up">
-            <Badge className="bg-accent text-accent-foreground mb-6 text-lg px-4 py-2">
-              <Sparkles className="w-4 h-4 mr-2" />
-              KCA University Presents
-            </Badge>
-            <h1 className="text-6xl md:text-8xl font-bold mb-6 gradient-text bg-gradient-to-r from-white to-accent bg-clip-text text-transparent">
-              Innovation Week 2025
-            </h1>
-            <h2 className="text-2xl md:text-3xl mb-8 text-accent font-semibold">
-              "Empowering Tomorrow's Leaders Through Innovation"
-            </h2>
+    <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
+      <div className="fade-in-up">
+        <h1 className="text-6xl md:text-8xl font-bold mb-6 gradient-text bg-gradient-to-r from-white to-accent bg-clip-text text-transparent">
+          Innovation Week 2025
+        </h1>
+        <h2 className="text-2xl md:text-3xl mb-8 text-accent font-semibold">
+          "Empowering Tomorrow's Leaders Through Innovation"
+        </h2>
 
-            <div className="grid md:grid-cols-3 gap-6 mb-10 text-lg">
-              <div className="flex items-center justify-center gap-2">
-                <Calendar className="w-5 h-5 text-accent" />
-                <span>October 15-17, 2024</span>
-              </div>
-              <div className="flex items-center justify-center gap-2">
-                <MapPin className="w-5 h-5 text-accent" />
-                <span>KCA University Main Campus</span>
-              </div>
-              <div className="flex items-center justify-center gap-2">
-                <Hash className="w-5 h-5 text-accent" />
-                <span>#KCAInnovation2025</span>
-              </div>
-            </div>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="btn-hero text-lg px-8 py-4">
-                <Users className="w-5 h-5 mr-2" />
-                Register Now
-              </Button>
-              <Button size="lg" variant="outline" className="btn-hero-secondary text-lg px-8 py-4 border-white text-white hover:bg-accent hover:text-accent-foreground">
-                <ExternalLink className="w-5 h-5 mr-2" />
-                Sponsor Our Event
-              </Button>
-            </div>
+        <div className="grid md:grid-cols-3 gap-6 mb-10 text-lg">
+          <div className="flex items-center justify-center gap-2">
+            <Calendar className="w-5 h-5 text-accent" />
+            <span>October 15-17, 2024</span>
+          </div>
+          <div className="flex items-center justify-center gap-2">
+            <MapPin className="w-5 h-5 text-accent" />
+            <span>KCA University Main Campus</span>
+          </div>
+          <div className="flex items-center justify-center gap-2">
+            <Hash className="w-5 h-5 text-accent" />
+            <span>#KCAInnovation2025</span>
           </div>
         </div>
-      </section>
+
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button size="lg" className="btn-hero bg-[#192c57] text-lg px-8 py-4">
+            <Users className="w-5 h-5 mr-2" />
+            Register Now
+          </Button>
+          <Button size="lg" variant="outline" className="btn-hero-secondary text-lg px-8 py-4">
+            <ExternalLink className="w-5 h-5 mr-2" />
+            Sponsor Our Event
+          </Button>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
       {/* Objectives Section */}
       <section className="py-20 bg-background">
@@ -714,7 +711,7 @@ const Index = () => {
             <Button
               size="lg"
               variant="outline"
-              className="text-lg px-8 py-4 border-white text-white hover:bg-accent hover:text-accent-foreground"
+              className="text-lg px-8 py-4 border-white text-black hover:bg-accent hover:text-accent-foreground"
             >
               <ExternalLink className="w-5 h-5 mr-2" />
               Download Brochure
