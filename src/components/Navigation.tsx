@@ -1,23 +1,25 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import logo from "@/assets/kca_logo-removebg-preview.png";
+
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
     { name: 'Past Events', href: '#past-events' },
-    { name: 'Register', href: '#register' },
     { name: 'Our Sponsors', href: '#sponsors' },
     { name: 'Exhibitors', href: '#exhibitors' }
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+    <nav className="fixed h-[80px] pt-1 top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <span className="text-xl font-bold gradient-text">KCA Innovation Week</span>
+            <img className='h-20' src={logo} alt="" />
+            {/* <span className="text-xl font-bold gradient-text">{keynoteSpeaker}</span> */}
           </div>
 
           {/* Desktop Navigation */}

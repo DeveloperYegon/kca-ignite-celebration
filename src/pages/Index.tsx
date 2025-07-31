@@ -30,6 +30,69 @@ const speakers = [
       'Speaker at 100+ international conferences'
     ]
   },
+   {
+    id: '1',
+    name: 'Dr. Sarah Tech',
+    designation: 'Chief Innovation Officer',
+    company: 'TechCorp Global',
+    bio: 'Dr. Sarah Tech is a renowned technology leader with over 15 years of experience driving digital transformation in Fortune 500 companies. She has led groundbreaking initiatives in AI, blockchain, and sustainable technology solutions.',
+    image: keynoteSpeaker,
+    expertise: ['Artificial Intelligence', 'Digital Transformation', 'Sustainable Tech', 'Innovation Strategy'],
+    experience: '15+ years',
+    achievements: [
+      'Led digital transformation for 50+ global organizations',
+      'Published 30+ research papers on AI ethics',
+      'Winner of Tech Innovation Award 2023',
+      'Speaker at 100+ international conferences'
+    ]
+  },
+   {
+    id: '1',
+    name: 'Dr. Sarah Tech',
+    designation: 'Chief Innovation Officer',
+    company: 'TechCorp Global',
+    bio: 'Dr. Sarah Tech is a renowned technology leader with over 15 years of experience driving digital transformation in Fortune 500 companies. She has led groundbreaking initiatives in AI, blockchain, and sustainable technology solutions.',
+    image: keynoteSpeaker,
+    expertise: ['Artificial Intelligence', 'Digital Transformation', 'Sustainable Tech', 'Innovation Strategy'],
+    experience: '15+ years',
+    achievements: [
+      'Led digital transformation for 50+ global organizations',
+      'Published 30+ research papers on AI ethics',
+      'Winner of Tech Innovation Award 2023',
+      'Speaker at 100+ international conferences'
+    ]
+  },
+   {
+    id: '1',
+    name: 'Dr. Sarah Tech',
+    designation: 'Chief Innovation Officer',
+    company: 'TechCorp Global',
+    bio: 'Dr. Sarah Tech is a renowned technology leader with over 15 years of experience driving digital transformation in Fortune 500 companies. She has led groundbreaking initiatives in AI, blockchain, and sustainable technology solutions.',
+    image: keynoteSpeaker,
+    expertise: ['Artificial Intelligence', 'Digital Transformation', 'Sustainable Tech', 'Innovation Strategy'],
+    experience: '15+ years',
+    achievements: [
+      'Led digital transformation for 50+ global organizations',
+      'Published 30+ research papers on AI ethics',
+      'Winner of Tech Innovation Award 2023',
+      'Speaker at 100+ international conferences'
+    ]
+  }, {
+    id: '1',
+    name: 'Dr. Sarah Tech',
+    designation: 'Chief Innovation Officer',
+    company: 'TechCorp Global',
+    bio: 'Dr. Sarah Tech is a renowned technology leader with over 15 years of experience driving digital transformation in Fortune 500 companies. She has led groundbreaking initiatives in AI, blockchain, and sustainable technology solutions.',
+    image: keynoteSpeaker,
+    expertise: ['Artificial Intelligence', 'Digital Transformation', 'Sustainable Tech', 'Innovation Strategy'],
+    experience: '15+ years',
+    achievements: [
+      'Led digital transformation for 50+ global organizations',
+      'Published 30+ research papers on AI ethics',
+      'Winner of Tech Innovation Award 2023',
+      'Speaker at 100+ international conferences'
+    ]
+  },
   {
     id: '2',
     name: 'Mark Johnson',
@@ -171,7 +234,7 @@ const Index = () => {
               KCA University Presents
             </Badge>
             <h1 className="text-6xl md:text-8xl font-bold mb-6 gradient-text bg-gradient-to-r from-white to-accent bg-clip-text text-transparent">
-              Innovation Week 2024
+              Innovation Week 2025
             </h1>
             <h2 className="text-2xl md:text-3xl mb-8 text-accent font-semibold">
               "Empowering Tomorrow's Leaders Through Innovation"
@@ -184,27 +247,70 @@ const Index = () => {
               </div>
               <div className="flex items-center justify-center gap-2">
                 <MapPin className="w-5 h-5 text-accent" />
-                <span>KCA University Grounds</span>
+                <span>KCA University Main Campus</span>
               </div>
               <div className="flex items-center justify-center gap-2">
                 <Hash className="w-5 h-5 text-accent" />
-                <span>#KCAInnovation2024</span>
+                <span>#KCAInnovation2025</span>
               </div>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="btn-hero text-lg px-8 py-4">
+              <Button size="lg" className="btn-hero bg-[#192c57] text-lg px-8 py-4">
                 <Users className="w-5 h-5 mr-2" />
                 Register Now
               </Button>
               <Button size="lg" variant="outline" className="btn-hero-secondary text-lg px-8 py-4">
                 <ExternalLink className="w-5 h-5 mr-2" />
-                Become a Sponsor
+                Sponsor Our Event
               </Button>
             </div>
           </div>
         </div>
       </section>
+
+        {/* Objectives Section */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1">
+              <Badge className="bg-accent text-accent-foreground p-4 font-xl w-[50%] font-bold mb-4">Objectives</Badge>
+              <div className="space-y-6 text-lg text-muted-foreground">
+                <p>
+                  The KCA Innovation Week 2024 aims to foster a culture of creativity, entrepreneurship, 
+                  and technological advancement among students, faculty, and industry professionals.
+                </p>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0 mt-3"></div>
+                    <p>Inspire the next generation of innovators and entrepreneurs</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0 mt-3"></div>
+                    <p>Bridge the gap between academia and industry through practical workshops</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0 mt-3"></div>
+                    <p>Showcase cutting-edge research and innovative student projects</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0 mt-3"></div>
+                    <p>Create meaningful networking opportunities for future collaborations</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="order-1 lg:order-2">
+              <img
+                src={objectivesImage}
+                alt="Innovation Objectives"
+                className="w-full h-96 object-cover rounded-lg shadow-[var(--shadow-primary)] card-hover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       {/* Keynote Speaker Section */}
       <section className="py-20 bg-muted/30">
@@ -356,49 +462,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Objectives Section */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="order-2 lg:order-1">
-              <Badge className="bg-accent text-accent-foreground mb-4">Our Mission</Badge>
-              <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-6">Objectives & Vision</h2>
-              <div className="space-y-6 text-lg text-muted-foreground">
-                <p>
-                  The KCA Innovation Week 2024 aims to foster a culture of creativity, entrepreneurship, 
-                  and technological advancement among students, faculty, and industry professionals.
-                </p>
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0 mt-3"></div>
-                    <p>Inspire the next generation of innovators and entrepreneurs</p>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0 mt-3"></div>
-                    <p>Bridge the gap between academia and industry through practical workshops</p>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0 mt-3"></div>
-                    <p>Showcase cutting-edge research and innovative student projects</p>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0 mt-3"></div>
-                    <p>Create meaningful networking opportunities for future collaborations</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="order-1 lg:order-2">
-              <img
-                src={objectivesImage}
-                alt="Innovation Objectives"
-                className="w-full h-96 object-cover rounded-lg shadow-[var(--shadow-primary)] card-hover"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
+    
       {/* Partners Section */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
@@ -516,7 +580,7 @@ const Index = () => {
               <Users className="w-5 h-5 mr-2" />
               Register for Free
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-primary">
+            <Button size="lg" variant="outline" className="text-lg px-8 py-4 border-white text-black hover:bg-white hover:text-primary">
               <ExternalLink className="w-5 h-5 mr-2" />
               Download Brochure
             </Button>
