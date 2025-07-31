@@ -9,48 +9,48 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* KCA University Brand Colors */
-    --background: 0 0% 100%;
-    --foreground: 220 25% 15%;
+    --background: 0 0% 100%; /* White: #ffffff */
+    --foreground: 220 57% 20%; /* Navy blue: #192c57 */
 
-    --card: 0 0% 100%;
-    --card-foreground: 220 25% 15%;
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 220 57% 20%; /* Navy blue */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 25% 15%;
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 220 57% 20%; /* Navy blue */
 
-    /* KCA Blue Primary */
-    --primary: 220 85% 35%;
-    --primary-foreground: 0 0% 100%;
-    --primary-glow: 220 85% 45%;
+    /* KCA Navy Blue Primary */
+    --primary: 220 57% 20%; /* #192c57 */
+    --primary-foreground: 0 0% 100%; /* White */
+    --primary-glow: 220 57% 30%; /* Lighter navy blue for glow effect */
 
     /* KCA Gold Secondary */
-    --secondary: 45 95% 55%;
-    --secondary-foreground: 220 25% 15%;
+    --secondary: 45 65% 45%; /* #bea429 */
+    --secondary-foreground: 220 57% 20%; /* Navy blue */
 
     --muted: 220 15% 96%;
     --muted-foreground: 220 15% 45%;
 
     /* KCA Gold Accent */
-    --accent: 45 95% 55%;
-    --accent-foreground: 220 25% 15%;
+    --accent: 45 65% 45%; /* #bea429 */
+    --accent-foreground: 220 57% 20%; /* Navy blue */
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive-foreground: 0 0% 100%; /* White */
 
     --border: 220 15% 90%;
     --input: 220 15% 95%;
-    --ring: 220 85% 35%;
+    --ring: 220 57% 20%; /* Navy blue */
 
     /* KCA Innovation Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(220 85% 35%), hsl(220 85% 45%));
-    --gradient-hero: linear-gradient(135deg, hsl(220 85% 35% / 0.9), hsl(220 85% 25% / 0.9));
-    --gradient-gold: linear-gradient(135deg, hsl(45 95% 55%), hsl(45 85% 65%));
-    --gradient-innovation: linear-gradient(135deg, hsl(220 85% 35%), hsl(260 75% 45%), hsl(45 95% 55%));
+    --gradient-primary: linear-gradient(135deg, hsl(220 57% 20%), hsl(220 57% 30%));
+    --gradient-hero: linear-gradient(135deg, hsl(220 57% 20% / 0.9), hsl(220 57% 15% / 0.9));
+    --gradient-gold: linear-gradient(135deg, hsl(45 65% 45%), hsl(45 65% 55%));
+    --gradient-innovation: linear-gradient(135deg, hsl(220 57% 20%), hsl(260 75% 45%), hsl(45 65% 45%));
 
     /* Innovation Shadows */
-    --shadow-primary: 0 10px 30px -10px hsl(220 85% 35% / 0.3);
-    --shadow-gold: 0 8px 25px -8px hsl(45 95% 55% / 0.3);
-    --shadow-glow: 0 0 40px hsl(220 85% 45% / 0.2);
+    --shadow-primary: 0 10px 30px -10px hsl(220 57% 20% / 0.3);
+    --shadow-gold: 0 8px 25px -8px hsl(45 65% 45% / 0.3);
+    --shadow-glow: 0 0 40px hsl(220 57% 30% / 0.2);
 
     /* Animation Timings */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -59,58 +59,52 @@ All colors MUST be HSL.
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
+    --sidebar-foreground: 220 57% 20%; /* Navy blue */
+    --sidebar-primary: 220 57% 20%; /* Navy blue */
+    --sidebar-primary-foreground: 0 0% 100%; /* White */
+    --sidebar-accent: 45 65% 45%; /* Gold */
+    --sidebar-accent-foreground: 220 57% 20%; /* Navy blue */
     --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-ring: 220 57% 20%; /* Navy blue */
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 220 57% 15%; /* Darker navy blue */
+    --foreground: 0 0% 100%; /* White */
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 220 57% 15%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 220 57% 15%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 220 57% 20%; /* Navy blue */
+    --primary-foreground: 0 0% 100%; /* White */
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 45 65% 45%; /* Gold */
+    --secondary-foreground: 220 57% 20%; /* Navy blue */
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 220 15% 20%;
+    --muted-foreground: 220 15% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 45 65% 45%; /* Gold */
+    --accent-foreground: 220 57% 20%; /* Navy blue */
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%; /* White */
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 220 57% 20%; /* Navy blue */
+
+    --sidebar-background: 220 57% 15%;
+    --sidebar-foreground: 0 0% 100%; /* White */
+    --sidebar-primary: 220 57% 20%; /* Navy blue */
+    --sidebar-primary-foreground: 0 0% 100%; /* White */
+    --sidebar-accent: 45 65% 45%; /* Gold */
+    --sidebar-accent-foreground: 0 0% 100%; /* White */
+    --sidebar-border: 220 15% 20%;
+    --sidebar-ring: 220 57% 20%; /* Navy blue */
   }
 }
 
@@ -175,6 +169,11 @@ All colors MUST be HSL.
   
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
+  }
+
+  /* Golden TabsTrigger Styling */
+  [data-state="active"] {
+    @apply bg-[hsl(45,65%,45%)] text-[hsl(220,57%,20%)];
   }
 }
 

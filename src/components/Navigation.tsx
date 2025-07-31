@@ -1,16 +1,15 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import logo from "@/assets/kca_logo-removebg-preview.png";
-
+import logo from '@/assets/kca_logo-removebg-preview.png';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { name: 'Past Events', href: '#past-events' },
-    { name: 'Our Sponsors', href: '#sponsors' },
-    { name: 'Exhibitors', href: '#exhibitors' }
+    { name: 'Event Highlights', href: '#event-highlights' },
+    { name: 'Our Sponsors', href: '#partners' },
+    { name: 'Exhibitors', href: '#exhibitors' },
   ];
 
   return (
@@ -18,8 +17,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <img className='h-20' src={logo} alt="" />
-            {/* <span className="text-xl font-bold gradient-text">{keynoteSpeaker}</span> */}
+            <img className="h-20" src={logo} alt="KCA University Logo" />
           </div>
 
           {/* Desktop Navigation */}
