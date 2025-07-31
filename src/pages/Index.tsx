@@ -330,7 +330,7 @@ const Index = () => {
             {speakers.map((speaker) => (
               <Card 
                 key={speaker.id} 
-                className="speaker-card"
+                className="speaker-card group"
                 onClick={() => handleSpeakerClick(speaker)}
               >
                 <CardContent className="p-6">

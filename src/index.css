@@ -164,7 +164,7 @@ All colors MUST be HSL.
   .speaker-card {
     @apply bg-card border border-border rounded-lg p-6 text-center
            transition-[var(--transition-smooth)] hover:shadow-[var(--shadow-primary)]
-           hover:-translate-y-2 cursor-pointer group;
+           hover:-translate-y-2 cursor-pointer;
   }
 
   /* Scrollbar Styling */
