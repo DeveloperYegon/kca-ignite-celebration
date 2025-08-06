@@ -10,7 +10,25 @@ const Navigation = () => {
     { name: 'Event Highlights', href: '#event-highlights' },
     { name: 'Our Sponsors', href: '#partners' },
     { name: 'Exhibitors', href: '#exhibitors' },
+    { name: 'Location', href: '#location' }, // New Location link
   ];
+
+  const handleNavClick = (e, href) => {
+    e.preventDefault();
+    const targetId = href.replace('#', '');
+    const element = document.getElementById(targetId);
+    if (element) {
+      const headerOffset = 80; // Height of the fixed header
+      const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth',
+      });
+      setIsOpen(false); // Close mobile menu
+    }
+  };
 
   return (
     <nav className="fixed h-[80px] pt-1 top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
@@ -28,6 +46,7 @@ const Navigation = () => {
                   key={item.name}
                   href={item.href}
                   className="text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                  onClick={(e) => handleNavClick(e, item.href)}
                 >
                   {item.name}
                 </a>
@@ -57,7 +76,7 @@ const Navigation = () => {
                   key={item.name}
                   href={item.href}
                   className="text-foreground hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
-                  onClick={() => setIsOpen(false)}
+                  onClick={(e) => handleNavClick(e, item.href)}
                 >
                   {item.name}
                 </a>

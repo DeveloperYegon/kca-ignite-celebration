@@ -106,9 +106,11 @@ All colors MUST be HSL.
     --sidebar-border: 220 15% 20%;
     --sidebar-ring: 220 57% 20%; /* Navy blue */
   }
-}
 
-@layer base {
+  html {
+    scroll-behavior: smooth; /* Ensure smooth scrolling for navigation */
+  }
+
   * {
     @apply border-border;
   }
@@ -127,7 +129,8 @@ All colors MUST be HSL.
   }
 
   .btn-hero-secondary {
-    @apply bg-gradient-to-r from-accent to-secondary text-accent-foreground 
+    @apply border border-accent text-accent-foreground bg-transparent
+           hover:bg-accent hover:text-accent-foreground
            shadow-[var(--shadow-gold)] hover:shadow-[var(--shadow-primary)]
            transform hover:scale-105 transition-[var(--transition-bounce)];
   }
@@ -159,6 +162,13 @@ All colors MUST be HSL.
     @apply bg-card border border-border rounded-lg p-6 text-center
            transition-[var(--transition-smooth)] hover:shadow-[var(--shadow-primary)]
            hover:-translate-y-2 cursor-pointer;
+  }
+
+  /* Map Container Styling */
+  .map-container {
+    @apply w-full h-[400px] rounded-lg overflow-hidden
+           border border-border shadow-[var(--shadow-primary)]
+           transition-[var(--transition-smooth)] hover:shadow-[var(--shadow-glow)];
   }
 
   /* Scrollbar Styling */
@@ -195,4 +205,20 @@ All colors MUST be HSL.
   50% {
     transform: translateY(-10px);
   }
+}
+
+/* Animation for Map Section */
+@keyframes fadeInMap {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.map-container {
+  animation: fadeInMap 0.8s ease-out forwards;
 }
