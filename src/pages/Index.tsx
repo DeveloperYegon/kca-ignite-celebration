@@ -227,10 +227,10 @@ const Index = () => {
 
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
           <div className="fade-in-up">
-            <Badge className="bg-accent text-accent-foreground mb-6 text-lg px-4 py-2">
+            {/* <Badge className="bg-accent text-accent-foreground mb-6 text-lg px-4 py-2">
               <Sparkles className="w-4 h-4 mr-2" />
               KCA University Presents
-            </Badge>
+            </Badge> */}
             <h1 className="text-6xl md:text-8xl font-bold mb-6 gradient-text bg-gradient-to-r from-white to-accent bg-clip-text text-transparent">
               Innovation Week 2025
             </h1>
@@ -258,7 +258,7 @@ const Index = () => {
                 <Users className="w-5 h-5 mr-2" />
                 Register Now
               </Button>
-              <Button size="lg" variant="outline" className="btn-hero-secondary text-lg px-8 py-4 border-white text-white hover:bg-accent hover:text-accent-foreground">
+              <Button size="lg" variant="outline" className="btn-hero-secondary text-lg px-8 py-4 border-white text-black hover:bg-accent hover:text-accent-foreground">
                 <ExternalLink className="w-5 h-5 mr-2" />
                 Sponsor Our Event
               </Button>
